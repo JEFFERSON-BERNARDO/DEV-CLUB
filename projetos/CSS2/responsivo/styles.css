@@ -1,0 +1,152 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    margin-top: 17px;
+    margin-right: 22px;
+    color: #17233D;
+    font-size: 12px;
+    font-weight: 380;
+    line-height: 18px;
+    text-align: center;
+    display: block;
+
+
+}
+
+.primeiro {
+    margin-left: 22px;
+}
+
+button {
+    width: 161px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color: #ffffff;
+    border: #4CB538;
+    border-radius: 15px;
+    background-color: #6FBF44;
+}
+
+.div {
+    text-align: center;   
+    margin-top: 20px;
+}
+
+h1 {
+    
+    margin-left: 57px;
+    width: 278px;
+    height: 60px;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+p {
+    
+    margin-left: 43px;
+    margin-top: 29px;
+    width: 304px;
+    height: 165px;
+
+}
+
+
+.img {
+    margin: 0 auto;
+    display: block;
+    width: 312px;
+    height: 288px;
+    
+}
+
+.saiba {
+    
+    width: 112px;
+    height: 27px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #6FBF44;
+    text-align: right;
+
+}
+
+@media (min-width: 426px) {
+    * {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        
+        
+    }
+
+    header {
+        width: 79px;
+        height: 21px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        display: inline;
+    }
+
+    button {
+        margin-left: 20px;
+        width: 124px;
+        height: 51px;
+    }
+
+    .img {
+        position: fixed;        
+        width: 595.18px;
+        height: 500px;
+        top: 206px;
+        margin-left: 121px;
+    }
+
+    h1 {
+        position: fixed;
+        left: 801px;
+        top: 302px;
+        width: 582px;
+        height: 164px;
+        font-size: 62px;
+        font-weight: 700;
+
+
+
+    }
+
+    p {
+        position: fixed;
+        top: 453px;
+        left: 801px;
+        width: 493px;
+        height: 99px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 33px;
+        
+    }
+
+    .saiba {
+        position: fixed;
+        left: 1201px;
+        top: 637px;
+        width: 112px;
+        height: 27px;
+        
+
+    }
+
+
+}
