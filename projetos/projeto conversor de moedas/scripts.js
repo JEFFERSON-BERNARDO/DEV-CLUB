@@ -1,12 +1,14 @@
+ const convertButton = document.querySelector(".convent-button")
 
-const convertButton =document.querySelector(".convent-button")
+ function conventValues(){
+ const inputCurrencyValue = document.querySelector(".input-currecy").value
 
-function convertValues(){
-    console.log("e agora?")
-}
+ const dolarToday = 6
 
-convertButton.addEventListener ("click", convertValues)
+ const convertedValue = inputCurrencyValue/ dolarToday
 
+ console.log(convertedValue)
+
+ }
  
-
-
+ convertButton.addEventListener("click", conventValues)
