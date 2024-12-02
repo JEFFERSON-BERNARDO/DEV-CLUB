@@ -1,7 +1,6 @@
-const convertButton = document.querySelector(".conver-button");
+const convertButton = document.querySelector(".convert-button");
 
-function convertValues(){
-
-   console.log("deu certo?")
-};
+function convertValues() {
+    console.log("Agora sim!!");
+}
 convertButton.addEventListener("click", convertValues);
