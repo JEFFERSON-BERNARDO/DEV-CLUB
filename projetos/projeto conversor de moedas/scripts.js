@@ -8,17 +8,17 @@ function convertValues() {
     const currencyValueConverted = document.querySelector(".moeda-valor")
 
 
-    const bitcoinToday = 600000;
+    const bitcoinToday = 627283;
     const dolarToday = 6.0;
     const euroToday = 6.4;
     const libraToday = 7.7;
-    const realToday = 1.0;
+    const realToday = 1;
 
-    const realXdolar = realToday / dolarToday
-    const realXbitcoin = realToday / bitcoinToday
-    const realXeuro = realToday / euroToday
-    const realXlibra = realToday / libraToday
-    const realXreal = realToday / realToday
+    const realXdolar = realToday / dolarToday;
+    const realXbitcoin = realToday / bitcoinToday;
+    const realXeuro = realToday / euroToday;
+    const realXlibra = realToday / libraToday;
+    const realXreal = realToday;
 
     const bitcoinXbitcon = bitcoinToday / bitcoinToday
     const bitcoinXdolar = bitcoinToday / dolarToday
@@ -190,52 +190,51 @@ function convertValues() {
             style: "currency",
             currency: "BRL"
         }).format(inputCurrencyValue * libraXreal)
+    }
 
-        if (currencySelectDe.value == "real-de" && currencySelect.value == "dolar") {
-            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
-                style: "currency",
-                currency: "USD"
-            }).format(inputCurrencyValue * realXdolar)
-        }
+    if (currencySelectDe.value == "real-de" && currencySelect.value == "dolar") {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+            style: "currency",
+            currency: "USD"
+        }).format(inputCurrencyValue * realXdolar)
+    }
 
-        if (currencySelectDe.value == "real-de" && currencySelect.value == "euro") {
-            currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
-                style: "currency",
-                currency: "EUR"
-            }).format(inputCurrencyValue * realXeuro)
-        }
+    if (currencySelectDe.value == "real-de" && currencySelect.value == "euro") {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
+            style: "currency",
+            currency: "EUR"
+        }).format(inputCurrencyValue * realXeuro)
+    }
 
-        if (currencySelectDe.value == "real-de" && currencySelect.value == "libra") {
-            currencyValueConverted.innerHTML = new Intl.NumberFormat("en-UK", {
-                style: "currency",
-                currency: "GBP"
-            }).format(inputCurrencyValue * realXlibra)
+    if (currencySelectDe.value == "real-de" && currencySelect.value == "libra") {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-UK", {
+            style: "currency",
+            currency: "GBP"
+        }).format(inputCurrencyValue * realXlibra)
 
-        }
-        if (currencySelectDe.value == "real-de" && currencySelect.value == "bitcoin") {
-            currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
-                style: "currency",
-                currency: "BIT"
-            }).format(inputCurrencyValue * realXbitcoin)
-        }
+    }
+    if (currencySelectDe.value == "real-de" && currencySelect.value == "bitcoin") {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BIT"
+        }).format(inputCurrencyValue * realXbitcoin)
+    }
 
-        if (currencySelectDe.value == "real-de" && currencySelect.value == "real") {
-            currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
-                style: "currency",
-                currency: "BRL"
-            }).format(inputCurrencyValue * realXreal )
-
-        }
-       
-
-        changeCurency()
-        changeInputCurency()
-
+    if (currencySelectDe.value == "real-de" && currencySelect.value == "real") {
+        currencyValueConverted.innerHTML = new Intl.NumberFormat("pt-BR", {
+            style: "currency",
+            currency: "BRL"
+        }).format(inputCurrencyValue * realXreal)
 
     }
 
 
+    changeCurency()
+    changeInputCurency()
 }
+
+
+
 function changeCurency() {
     const currencyName = document.getElementById("currency-name")
     const currecyImg = document.getElementById("currecy-img")
@@ -267,8 +266,9 @@ function changeCurency() {
         currecyImg.src = "./assets/brasil.png"
     }
 
-    convertValues()
-    
+   convertValues()
+   changeInputCurency()
+
 
 }
 function changeInputCurency() {

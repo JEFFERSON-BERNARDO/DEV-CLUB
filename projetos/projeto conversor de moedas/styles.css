@@ -43,7 +43,7 @@ main {
 label {
     color: black;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 70px;
     display: flex;
     flex-direction: column;
     text-align: center;
